@@ -1,50 +1,44 @@
-# React + TypeScript + Vite
+# <b>PROGRAMA STARTER FULL STACK WEB - GROWDEV</b>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<b>Módulo: REACT III</b>
 
-Currently, two official plugins are available:
+<b>ATIVIDADE - REDUX</b>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Controle Financeiro
 
-## Expanding the ESLint configuration
+Este é um projeto de uma aplicação web para controle financeiro pessoal. A aplicação permite que o usuário registre transações financeiras, como depósitos e saques, e acompanhe o saldo atual. Além disso, todas as transações são exibidas em um extrato com a descrição e o valor, onde saques são destacados em vermelho.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<img src="https://github.com/Ligueja/controle-financeiro-redux/blob/main/src/images/tela1.jpg" width="700"/>
 
-- Configure the top-level `parserOptions` property like this:
+<img src="https://github.com/Ligueja/controle-financeiro-redux/blob/main/src/images/tela2.jpg" width="700"/>
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Tecnologias Utilizadas
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **React**
+- **Redux Toolkit**
+- **Redux Persist**
+- **Material UI (MUI)**
+- **TypeScript**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Funcionalidades
+
+- **Registro de Transações**: O usuário pode adicionar uma descrição e um valor para depósitos e saques. O saldo é atualizado automaticamente.
+- **Visualização de Extrato**: As transações são listadas em uma página de extrato, onde saques são destacados em vermelho e depósitos em preto.
+- **Persistência de Estado**: O estado das transações é gerenciado pelo Redux e salvo no `localStorage` utilizando o Redux Persist, garantindo que os dados permaneçam após recarregar a página.
+
+## Como Executar o Projeto
+
+1. Clone o repositório:
+
+   ```bash
+   git clone https://github.com/Ligueja/controle-financeiro-redux.git
+   cd controle-financeiro-redux
+
+2. Instale das dependências:
+   ```bash
+   npm install
+
+3. Inicie o servidor:
+   ```bash
+   npm run dev
