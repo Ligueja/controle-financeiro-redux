@@ -8,6 +8,11 @@
 
 Este é um projeto de uma aplicação web para controle financeiro pessoal. A aplicação permite que o usuário registre transações financeiras, como depósitos e saques, e acompanhe o saldo atual. Além disso, todas as transações são exibidas em um extrato com a descrição e o valor, onde saques são destacados em vermelho.
 
+<img src="https://github.com/Ligueja/controle-financeiro-redux/blob/main/src/images/tela1.jpg" width="700"/>
+
+<img src="https://github.com/Ligueja/controle-financeiro-redux/blob/main/src/images/tela2.jpg" width="700"/>
+
+
 ## Tecnologias Utilizadas
 
 - **React**
