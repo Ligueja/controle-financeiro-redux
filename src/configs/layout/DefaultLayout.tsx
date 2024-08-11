@@ -1,6 +1,6 @@
 import { Stack } from "@mui/material";
 import { Footer } from "../../components/functionals/Footer";
-import { Navbar } from "../../components/functionals/NavBar";
+import { Navbar } from "../../components/functionals/Navbar";
 
 interface DefaultLayoutProps {
   children: React.ReactNode;
@@ -15,5 +15,3 @@ export function DefaultLayout({ children }: DefaultLayoutProps) {
     </Stack>
   );
 }
-
-//o stack quando renderizado é a mesma coisa que renderizar uma Div com valor flex e flex direction coluna (collumn), o que não é o comportamernto padrão, pois o flex é em linha (row).

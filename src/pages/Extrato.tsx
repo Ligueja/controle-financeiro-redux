@@ -14,6 +14,8 @@ export function Extrato() {
         Extrato de Movimentações
       </Typography>
 
+      {/* listar as transações realizadas, sendo que as negativas (< 0)  serão listadas em vermelho. Está formatado para apresentar os valores como REAL BR. */}
+
       {extrato.transacoes.map((transacao, index) => (
         <Box key={index} sx={{ padding: "8px 0" }}>
           <Typography
