@@ -1,3 +1,9 @@
+# <b>PROGRAMA STARTER FULL STACK WEB - GROWDEV</b>
+
+<b>Módulo: REACT III</b>
+
+<b>ATIVIDADE - REDUX</b>
+
 # Controle Financeiro
 
 Este é um projeto de uma aplicação web para controle financeiro pessoal. A aplicação permite que o usuário registre transações financeiras, como depósitos e saques, e acompanhe o saldo atual. Além disso, todas as transações são exibidas em um extrato com a descrição e o valor, onde saques são destacados em vermelho.
@@ -21,5 +27,13 @@ Este é um projeto de uma aplicação web para controle financeiro pessoal. A ap
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
-   cd nome-do-repositorio
+   git clone https://github.com/Ligueja/controle-financeiro-redux.git
+   cd controle-financeiro-redux
+
+2. Instale das dependências:
+   ```bash
+   npm install
+
+3. Inicie o servidor:
+   ```bash
+   npm run dev
